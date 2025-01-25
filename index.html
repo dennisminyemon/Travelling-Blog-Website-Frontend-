@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Simple Travelling Blog Website</title>
+    <!-- font awesome icon link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav>
+        <!-- logo -->
+        <div class="logo">
+            <h3>THE <span class="highlight">EXPLORER</span></h3>
+        </div>
+        <ul class="nav_links">
+            <li><a href="#homeSection">HOME</a></li>
+            <li><a href="#toursSection">TOURS</a></li>
+            <li><a href="#exploreSection">EXPLORES</a></li>
+            <li><a href="#aboutSection">ABOUT</a></li>
+            <li><a href="#contactSection">CONTACT</a></li>
+        </ul>
+        <ul class="nav-links-mobile" id="mobileMenu">
+            <li><a href="#homeSection" class="active" onclick="closeMenu()">HOME</a></li>
+            <li><a href="#toursSection" onclick="closeMenu()">TOURS</a></li>
+            <li><a href="#exploreSection" onclick="closeMenu()">EXPLORES</a></li>
+            <li><a href="#aboutSection" onclick="closeMenu()">ABOUT</a></li>
+            <li><a href="#contactSection" onclick="closeMenu()">CONTACT</a></li>
+        </ul>
+        <!-- menu btn -->
+        <div class="menu_btn" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Header Section-->
+    <header id="homeSection">
+        <div class="head_content">
+            <h2>Explore The Colorful World</h2>
+            <!-- underline -->
+            <div class="line"></div>
+            <h1>A WONDERFUL GIFT</h1>
+            <a href="#" class="link_btn">Start Exlporing</a>
+        </div>
+    </header>
+
+    <!-- Events Section-->
+    <section class="events">
+        <div class="title">
+            <h1>Upcoming Events</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="./img/img1.png" class="col_img" alt="1">
+                <h3>Everest Camp</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
+                    consectetur adipisicing elit.</p>
+                <a href="#" class="link_btn">Read More</a>
+            </div>
+            <div class="col">
+                <img src="./img/img2.png" class="col_img" alt="2">
+                <h3>Hiking Camp</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
+                    consectetur adipisicing elit.</p>
+                <a href="#" class="link_btn">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Explore Section -->
+    <section class="explore" id="exploreSection">
+        <div class="explore_content">
+            <h1>Explore The World</h1>
+            <!-- underline -->
+            <div class="line"></div>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore, beatae eum ipsam, error modi autem
+                maiores minus, illum suscipit culpa quo molestias quas iste, amet consectetur adipisicing elit.</p>
+            <a href="#" class="link_btn">Learn More</a>
+        </div>
+    </section>
+
+    <!-- Tours Section-->
+    <section class="tours" id="toursSection">
+        <div class="row">
+            <div class="col content_col">
+                <h1>UPCOMING TOURS & DESTINATIONS</h1>
+                <!-- underline -->
+                <div class="line"></div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero laborum dolorum, laudantium earum,
+                    odio deleniti illum natus optio sit quaerat rerum, eaque quo? Rerum facere doloremque asperiores
+                    voluptatibus consequatur officiis.</p>
+                <a href="#" class="link_btn">Read More</a>
+            </div>
+            <div class="col img_col">
+                <div class="gallery">
+                    <img src="./img/img3.png" alt="3">
+                    <img src="./img/img4.png" alt="4">
+                    <img src="./img/img5.png" alt="5">
+                    <img src="./img/img6.png" alt="6">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <section class="footer" id="aboutSection">
+        <p>© THE EXPLORER 2024</p>
+        <div class="footer_links">
+            <a href="#">Affiliate Disclosures</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms Of Use</a>
+        </div>
+        <p> Some of the pages on my travel blog contain affiliate links. Whenever you buy something through one of these
+            links, I get a small commission at no extra cost to you. I only recommend products and
+            services that I feel are high quality and helpful to my readers.</p>
+    </section>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('open');
+        }
+
+        function closeMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.remove('open');
+        }
+    </script>
+</body>
+</html>
